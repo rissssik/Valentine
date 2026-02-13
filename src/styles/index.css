@@ -1,3 +1,36 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+/* =========================
+   iOS / Telegram FIX
+   Disable glass blur (causes white blocks) + make cards solid
+   ========================= */
+
+/* Make translucent cards stable (no transparency / no blur) */
+.bg-white\/5,
+.bg-white\/10,
+.bg-white\/15,
+.bg-white\/20,
+.bg-white\/25,
+.bg-white\/30,
+.bg-white\/40 {
+  background: rgba(255, 120, 190, 0.35) !important; /* мягкий розовый */
+}
+
+/* Card borders */
+.border-white\/10,
+.border-white\/20,
+.border-white\/30 {
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Kill buggy blur everywhere */
+.backdrop-blur,
+.backdrop-blur-sm,
+.backdrop-blur-md,
+.backdrop-blur-lg,
+.backdrop-blur-xl,
+.backdrop-blur-2xl {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
