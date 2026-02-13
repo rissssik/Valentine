@@ -2,8 +2,8 @@ import { motion } from 'motion/react';
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { ConfettiHearts } from '../components/ConfettiHearts';
-import skepticalKitty from 'figma:asset/ed57bcf21617399e9a88a34507d6b9d31a54cd49.png';
-import derptyKitty from 'figma:asset/6f7726346f192fecb1e48b3246b1c0f27ecdd1fb.png';
+import skepticalKitty from '../../assets/ed57bcf21617399e9a88a34507d6b9d31a54cd49.png';
+import emptyKitty from '../../assets/6f7726346f192fecb1e48b3246b1c0f27ecdd1fb.png';
 
 export function ApologyScreen() {
   const [showConfetti, setShowConfetti] = useState(false);
