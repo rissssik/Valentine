@@ -87,7 +87,7 @@ export function ApologyScreen() {
 
   const getCurrentKittyImage = () => {
     if (thinkClickCount === 1) return skepticalKitty;
-    if (thinkClickCount === 2) return derptyKitty;
+    if (thinkClickCount === 2) return emptyKitty;
     return skepticalKitty;
   };
 
