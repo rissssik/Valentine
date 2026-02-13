@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useNavigate } from 'react-router';
 import { useEffect, useState } from 'react';
-import newPhoto from 'figma:asset/4d445e75fd406db608a4440bca9a3c57947831e1.png';
+import newPhoto from '../../assets/final-photo.png';
 
 interface Petal {
   id: number;
